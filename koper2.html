@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOPERBIJAK Store - Pontianak </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f3f4f6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #111827, #4f46e5);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: Blackboard;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiPmhId-fbgFES3rw0gnZYMuXHowkMmxo_ug&s');
+            background-size: cover;
+            background-position: center;
+            height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+        }
+
+        .hero p {
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+
+        .btn {
+            background: #facc15;
+            color: #111827;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #fde047;
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product {
+            background: Dark Gold;
+            width: 280px;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: 0.3s;
+            position: relative;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+        }
+
+        .product img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+        .badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: #005385;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        .product-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .price {
+            color: #4f46e5;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .testimonials {
+            background: #e0e7ff;
+            text-align: center;
+        }
+
+        .testimonial {
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>KOPERBIJAK STORE</h2>
+    <nav>
+        <a href="#products">Produk</a>
+        <a href="#testimonials">Testimoni</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h1>KOPER ANTIPECAH</h1>
+        <p>SET UP IN STYLE, TRAVEL WITH CLASS!</p>
+        <a href="#products" class="btn">Belanja Sekarang</a>
+    </div>
+</section>
+
+<section id="products">
+    <h2 style="text-align:center;">Koleksi Terbaru</h2>
+    <div class="products">
+
+        <div class="product">
+            <span class="badge">NEW</span>
+            <img src="https://p16-lemon8-sign-sg.tiktokcdn.com/tos-alisg-v-a3e477-sg/ooVjhrfEAZbUAQFIOEFOJjADACgSADyef4I7yr~tplv-sdweummd6v-shrink:640:0:q50.webp?lk3s=66c60501&source=seo_middle_feed_list&x-expires=1804248000&x-signature=X1%2FAL8x39EhBUbiNfMR2vLtbwhQ%3D">
+            <div class="product-content">
+                <h3>KOPERBIJAK UK 20</h3>
+                <p class="price">Rp 364.000</p>
+                <a href="#contact" class="btn">Pesan</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <span class="badge">BEST</span>
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTzhNTUR_StYLr4ax5jATRaN9fIHImhcC4BPbNmp3cJi9w9nGwijE6DiHSgTZNgjeKiw6_SO6sI86EKfhRGX6U5qhNEMj13yKQVq4JAWQ0JoR34oUZuxsCxGA">
+            <div class="product-content">
+                <h3>KOPERBIJAK UK 24</h3>
+                <p class="price">Rp 437.000</p>
+                <a href="#contact" class="btn">Pesan</a>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<section id="testimonials" class="testimonials">
+    <h2>Apa Kata Pelanggan?</h2>
+    <div class="testimonial">
+        <p>"Bahannya nyaman dan modelnya kekinian banget!-Kelvin"</p>
+    </div>
+    <div class="testimonial">
+        <p>"Harga terjangkau tapi kualitas premium.-James"</p>
+    </div>
+</section>
+
+<section id="contact" style="text-align:center; padding:60px 20px;">
+    <h2>Hubungi Kami</h2>
+
+    <p style="margin-top:15px;">Pontianak Tenggara</p>
+    <p style="margin-top:5px;">085654875478</p>
+
+    <div style="margin-top:30px;">
+        <a href="https://wa.me/6285654875478" class="btn">
+            Pesan via WhatsApp
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; koperbijak-pontianak</p>
+</footer>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
